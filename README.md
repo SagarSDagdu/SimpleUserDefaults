@@ -5,7 +5,10 @@ A simple user defaults helper class in Swift which makes the use of Property Wra
 Just copy the file ````UserDefaultsStorage.swift```` in your project and you are good to go.
 
 ## Example
-1. Create a struct which contains the UserDefaults for your app. You can store all the default types as well as custom types which conform to Codable. An example of the such struct is :
+
+### Setup code
+
+Create a struct which contains the UserDefaults for your app. You can store all the default types as well as custom types which conform to Codable. An example of the such struct is :
 
 ````
 /// This struct is a sample of how to use the UserDefaultsStorage class to store and get UserDefaults in your app.
