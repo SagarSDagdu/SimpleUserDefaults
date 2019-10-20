@@ -1,7 +1,10 @@
 # SimpleUserDefaults
 A simple user defaults helper class in Swift which makes the use of Property Wrapper introduced in Swift 5.1 (Reference : https://docs.swift.org/swift-book/LanguageGuide/Properties.html) concept to simplify the use of ````UserDefaults````
 
-## Example Usage
+## Usage
+Just copy the file ````UserDefaultsStorage.swift```` in your project and you are good to go.
+
+## Example
 1. Create a struct which contains the UserDefaults for your app. You can store all the default types as well as custom types which conform to Codable. An example of the such struct is :
 
 ````
@@ -20,7 +23,7 @@ struct Settings {
     static var loggedInUserDetails: UserDetails? //Custom type
 }
 ````
-### Saving
+### Saving into UserDefaults
 
 ````
 // Save a boolean
@@ -32,7 +35,7 @@ Settings.loggedInUserDetails = dummyUser
 
 ````
 
-### Getting Values
+### Getting Values from UserDefaults
 
 ````
 if let isUserLoggedIn = Settings.isUserLoggedIn, isUserLoggedIn {
