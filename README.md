@@ -1,5 +1,5 @@
 # SimpleUserDefaults
-A simple user defaults helper class in Swift which makes the use of propertyWrapper concept to simplify the use of ````UserDefaults````
+A simple user defaults helper class in Swift which makes the use of Property Wrapper introduced in Swift 5.1 (Reference : https://docs.swift.org/swift-book/LanguageGuide/Properties.html) concept to simplify the use of ````UserDefaults````
 
 ## Example Usage
 1. Create a struct which contains the UserDefaults for your app. You can store all the default types as well as custom types which conform to Codable. An example of the such struct is :
