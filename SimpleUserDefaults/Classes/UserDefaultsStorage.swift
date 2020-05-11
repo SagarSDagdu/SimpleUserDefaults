@@ -43,6 +43,13 @@ public class UserDefaultsStorage<T: Codable> {
         self.userDefaults = userDefaults
     }
     
+    public init(wrappedValue: T?,
+                key: String, userDefaults: UserDefaults = UserDefaults.standard) {
+        self.key = key
+        self.userDefaults = userDefaults
+        self.wrappedValue = wrappedValue
+    }
+    
     public var wrappedValue: T? {
         get {
             guard let data = userDefaults.object(forKey: key) as? Data else {

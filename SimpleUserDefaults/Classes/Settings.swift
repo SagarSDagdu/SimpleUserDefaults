@@ -43,4 +43,7 @@ struct Settings {
     
     @UserDefaultsStorage(key: "loggedInUserDetails")
     static var loggedInUserDetails: UserDetails?
+    
+    @UserDefaultsStorage(key: "is2FALoginEnabled")
+    static var is2FALoginEnabled = true
 }
